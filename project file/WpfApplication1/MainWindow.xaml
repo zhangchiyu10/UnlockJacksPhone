@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Unlock Jack's Phone" Height="340" Width="363" ResizeMode="CanMinimize">
+    <Grid x:Name="Grid_back">
+        
+        <Canvas x:Name="Canvas_map" HorizontalAlignment="Left" Height="159.76" Margin="107,133,0,0" VerticalAlignment="Top" Width="220" MouseLeftButtonDown="Canvas_map_MouseLeftButtonDown" MouseLeftButtonUp="Canvas_map_MouseLeftButtonUp" MouseEnter="Canvas_MouseEnter">
+
+            <Ellipse x:Name="c1" Fill="#FFF4F4F5" Height="40" Canvas.Left="1" Stroke="Black" Canvas.Top="-1" Width="40" MouseMove="c1_MouseMove"/>
+            <Ellipse x:Name="c2" Fill="#FFF4F4F5" Height="40" Canvas.Left="61" Stroke="Black" Canvas.Top="-1" Width="40" MouseMove="c2_MouseMove"/>
+            <Ellipse x:Name="c3" Fill="#FFF4F4F5" Height="40" Canvas.Left="121" Stroke="Black" Canvas.Top="-1" Width="40" MouseMove="c3_MouseMove"/>
+            <Ellipse x:Name="c4" Fill="#FFF4F4F5" Height="40" Canvas.Left="181" Stroke="Black" Canvas.Top="-1" Width="40" MouseMove="c4_MouseMove"/>
+            <Ellipse x:Name="c5" Fill="#FFF4F4F5" Height="40" Canvas.Left="1" Stroke="Black" Canvas.Top="59" Width="40" MouseMove="c5_MouseMove"/>
+            <Ellipse x:Name="c6" Fill="#FFF4F4F5" Height="40" Canvas.Left="61" Stroke="Black" Canvas.Top="59" Width="40" MouseMove="c6_MouseMove"/>
+            <Ellipse x:Name="c7" Fill="#FFF4F4F5" Height="40" Canvas.Left="121" Stroke="Black" Canvas.Top="59" Width="40" MouseMove="c7_MouseMove"/>
+            <Ellipse x:Name="c8" Fill="#FFF4F4F5" Height="40" Canvas.Left="181" Stroke="Black" Canvas.Top="59" Width="40" MouseMove="c8_MouseMove"/>
+            <Ellipse x:Name="c9" Fill="#FFF4F4F5" Height="40" Canvas.Left="1" Stroke="Black" Canvas.Top="119" Width="40" MouseMove="c9_MouseMove"/>
+            <Ellipse x:Name="c10" Fill="#FFF4F4F5" Height="40" Canvas.Left="61" Stroke="Black" Canvas.Top="119" Width="40" MouseMove="c10_MouseMove"/>
+            <Ellipse x:Name="c11" Fill="#FFF4F4F5" Height="40" Canvas.Left="121" Stroke="Black" Canvas.Top="119" Width="40" MouseMove="c11_MouseMove"/>
+            <Ellipse x:Name="c12" Fill="#FFF4F4F5" Height="40" Canvas.Left="181" Stroke="Black" Canvas.Top="119" Width="40" MouseMove="c12_MouseMove"/>
+            <Path x:Name="path" Data="" Stretch="Fill"  StrokeThickness="10" Stroke="Blue"/>
+
+        </Canvas>
+        <Button Content="Help me" HorizontalAlignment="Left" Margin="23,102.253,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click_1" RenderTransformOrigin="0.016,0.676"/>
+        <TextBlock x:Name="TextBlock_Level_number" HorizontalAlignment="Left" Margin="198,85.76,0,0" TextWrapping="Wrap" Text="Level 1" VerticalAlignment="Top" Width="41.857"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="You have to borrow Jack's Android phone to call your girl friend, but Jack is a weird geek whose phone is weirder. To unlock the screen of his phone is a little hard. He only told you the start or the end spot which are red and green and &quot;Go in the farthest way&quot; as a hint." VerticalAlignment="Top" Margin="23,3.521,0,0" Width="318"/>
+        <TextBlock x:Name="TextBlock_help" HorizontalAlignment="Left" Margin="24,124.776,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" MouseLeftButtonDown="Text_route_MouseLeftButtonDown"/>
+        <Button x:Name="Button_Next" Content="Next" HorizontalAlignment="Left" Margin="258.056,83.76,0,0" VerticalAlignment="Top" Width="56" Click="Button_Next_Click"/>
+        <Button x:Name="Button_Previous" Content="Previous" HorizontalAlignment="Left" Margin="122.451,83.76,0,0" VerticalAlignment="Top" Width="54" Click="Button_Previous_Click" RenderTransformOrigin="0,0.52"/>
+        <TextBlock x:Name="TextBlock_hint" HorizontalAlignment="Left" Margin="122.451,107.253,0,0" TextWrapping="Wrap" Text="    " VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
